@@ -1,0 +1,150 @@
+body {
+  background-image: url("http://res.cloudinary.com/ddhu9bxrc/image/upload/c_scale,w_1600/v1518031520/1_wlivus.jpg");  
+  background-position: center; 
+}
+
+.container {
+  width: 55em;
+}
+
+h1 {
+  width: 10em;
+  border-radius: 20px;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+  background-color: black;
+  padding: 0.3em;
+  margin: 0 auto;
+}
+
+.header-row {
+  margin: 0.5em;
+}
+
+.btn-secondary {
+  background-color: #D4D5D0;
+  width: 3em;
+  height: 3em;
+  margin: 0.03em;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: 'Patrick Hand', cursive;
+  outline: none !important;
+  border: none;
+  border: 1px solid #54264B;
+}
+
+.btn-secondary:hover {
+  background-color: #D4D5D0;
+  width: 3em;
+  height: 3em;
+  margin: 0.03em;
+  font-size: 4em;
+  font-weight: bold;
+  outline: none !important;
+}
+
+.btn-secondary:focus {
+  background-color: #D4D5D0;
+  width: 3em;
+  height: 3em;
+  margin: 0.03em;
+  font-size: 4em;
+  font-weight: bold;
+  outline: none !important;
+}
+
+.btn-danger {
+  width: 2em;
+  height: 2em;
+  font-size: 2em;
+  padding: 0.1em;
+  margin-bottom: 0.1em;
+  font-family: 'Patrick Hand', cursive;
+}
+
+#header {
+  font-size: 2.7em;
+  color: rgb(65, 163, 86);
+  font-weight: bold;
+  font-family: 'Patrick Hand', cursive;
+}
+  
+#win {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: red;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.game {
+  width: 6em;
+}
+
+#start-msg {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: rgb(65, 163, 86);
+  font-family: 'Patrick Hand', cursive;
+}
+
+@media screen and (max-width: 699px){
+  
+  .container{
+    width: 25em;
+  }
+  
+  h1 {
+    width: 9em;
+    font-size: 2.2em;
+    margin: 0 auto;
+  }
+  
+  .btn-secondary {
+    width: 2.2em;
+    height: 2.2em;
+    font-size: 3em;
+  }
+  
+  .btn-secondary:hover {
+    width: 2.2em;
+    height: 2.2em;
+    font-size: 3em;
+  }
+  
+  .btn-secondary:focus {
+    width: 2.2em;
+    height: 2.2em;
+    font-size: 3em;
+  }
+  
+  .btn-success {
+    width: 2em;
+    height: 2em;
+    font-size: 1.5em;
+  }
+
+  .btn-danger {
+    width: 2em;
+    height: 2em;
+    font-size: 1.5em;
+  }
+
+  #header {
+    font-size: 1.5em;
+  }
+  
+  #win {
+    font-size: 1.8em;
+  }
+
+ .game {
+    width: 6em;
+  }
+
+  #start-msg {
+    font-size: 1.8em;
+  }

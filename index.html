@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    
+  </head>
+
+  <body>
+    <div class="container" ng-app="TicTacToe" ng-controller= "MainCtrl as main">
+
+      <div class="row text-center">
+        <h1> Tic Tac Toe Game</h1>
+      </div>
+      
+      <div class="row text-center header-row" ng-if="main.gameChoiceMsg">
+        <button class="btn btn-danger game" ng-click = "main.chooseGame(1)">One player</button>
+        <button class="btn btn-danger game" ng-click = "main.chooseGame(2)">Two players</button>
+      </div>
+      
+      <div class="row text-center" ng-if="main.charChoiceMsg">
+        <span id="header">Would You like to play as X or O? </span>
+        <button class="btn btn-danger" ng-click = "main.chooseChar(1)">X</button>
+        <button class="btn btn-danger" ng-click = "main.chooseChar(2)" >O</button>
+      </div>
+
+      <div class="row text-center" ng-if="main.headerMsg">
+        <span id="start-msg">It's time for Tic Tac Toe!</span>
+      </div>
+
+      <div class="row text-center">
+        <span id="win">{{main.winMessage}}</span>
+      </div>
+      
+      <div class="row text-center">
+        <button class="btn btn-secondary" ng-click="main.addContent(1)">{{main.xoArray[1]}}
+        </button>
+        <button class="btn btn-secondary" ng-click="main.addContent(2)">{{main.xoArray[2]}}
+        </button>
+        <button class="btn btn-secondary" ng-click="main.addContent(3)">{{main.xoArray[3]}}
+        </button>
+      </div>
+      
+      <div class="row text-center">
+        <button class="btn btn-secondary" ng-click="main.addContent(4)">{{main.xoArray[4]}}
+        </button>
+        <button class="btn btn-secondary" ng-click="main.addContent(5)">{{main.xoArray[5]}}
+        </button>
+        <button class="btn btn-secondary" ng-click="main.addContent(6)">{{main.xoArray[6]}}
+        </button>
+      </div>
+      
+      <div class="row text-center">
+        <button class="btn btn-secondary" ng-click="main.addContent(7)">{{main.xoArray[7]}}
+        </button>
+        <button class="btn btn-secondary" ng-click="main.addContent(8)">{{main.xoArray[8]}}
+        </button>
+        <button class="btn btn-secondary" ng-click="main.addContent(9)">{{main.xoArray[9]}}
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+
+</html>
